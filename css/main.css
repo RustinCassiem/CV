@@ -280,10 +280,10 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 /* Photo */
 .photo{
   float: left;
-  height: 200px;
+  height: 310px;
   width: 200px;
   margin-right: 20px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .photo img{
  -webkit-border-radius: 4px;
