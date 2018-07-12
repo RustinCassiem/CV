@@ -23,7 +23,7 @@ p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldse
 /* Composed to a scale of 12px, 14px, 16px, 18px, 21px, 24px, 36px, 48px, 60px and 72px */
 h1, h2, h3, h4, h5, h6 {font-family:'Open Sans', sans-serif;color:#444;}
 h1 {margin: 0; font-size: 3.75em; line-height: 1.2em; margin-bottom: 0.4em} /* 60px / 72px */
-h2 {margin: 0; font-size: 3em; line-height: 1em; margin-bottom: 0.5em} /* 48px / 48px */
+h2 {margin: 0; font-size: 2em; line-height: 1em; margin-bottom: 0.5em} /* 48px / 48px */
 h3 {margin: 0; font-size: 2.25em; line-height: 1.3333333333333333333333333333333em; margin-bottom: 0.6667em} /* 36px / 48px */ 
 h4 {margin: 0; font-size: 1.5em; line-height: 1em; margin-bottom: 1em} /* 24px / 24px */
 h5 {margin: 0; font-size: 1.3125em; line-height: 1.1428571428571428571428571428571em; margin-bottom: 1.1428571428571428571428571428571em} /* 21px / 24px */
@@ -119,6 +119,36 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   margin: 0 auto;
 }
 
+/*Scroll buttom*/
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#db347ab4;
+    text-indent:100px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#db3333da;
+    opacity:1;filter:"alpha(opacity=100)";
+}
 
 /* Utility */
 .chromeframe {
@@ -253,7 +283,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   height: 200px;
   width: 200px;
   margin-right: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .photo img{
  -webkit-border-radius: 4px;
