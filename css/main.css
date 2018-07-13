@@ -104,7 +104,7 @@ span.amp{font-family:Adobe Caslon Pro,Baskerville,"Goudy Old Style","Palatino","
 .cf {zoom:1} /* For IE 6/7 (trigger hasLayout) */
 
 /* DEFAULT MOBILE STYLE */
-body {width: 92%; margin: 0 auto} /* Center page without wrapper */
+body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 /* column grid */
 .g1,.g2,.g3{display:block; position: relative; margin-left: 1%; margin-right: 1%}
 /* 1 column grid */
@@ -127,12 +127,12 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
     cursor:pointer;
     width:50px;
     height:50px;
-    background-color:#db347ab4;
+    background-color:#94664fb3;
     text-indent:100px;
     display:none;
     -webkit-border-radius:60px;
     -moz-border-radius:60px;
-    border-radius:60px
+    border-radius:20px;
 }
 #scroll span {
     position:absolute;
@@ -146,7 +146,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
     border-bottom-color:#ffffff;
 }
 #scroll:hover {
-    background-color:#db3333da;
+    background-color:#e6b388;
     opacity:1;filter:"alpha(opacity=100)";
 }
 
@@ -531,9 +531,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 
 /* Meters */
 .meter { 
-  height: 24px;  /* Can be anything */
+  height: 27px;  /* Can be anything */
   position: relative;
-  border: 1px solid #f1f1f1;
+  border: 2px solid #9e9e9ec5;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -558,8 +558,8 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   content: "";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  /* background-image: 
-  -webkit-gradient(linear, 0 0, 100% 100%, 
+  background-image: 
+  /* -webkit-gradient(linear, 0 0, 100% 100%, 
     color-stop(.25, rgba(255, 255, 255, .2)), 
     color-stop(.25, transparent), color-stop(.5, transparent), 
     color-stop(.5, rgba(255, 255, 255, .2)), 
@@ -610,7 +610,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .emerald > span {
-  background-color: #2ecc71;
+  background-color: #56ce9c;
 
 }
 
@@ -625,10 +625,10 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   background-color: #f1c40f;
 }
 .midnight > span{
-  background-color: #2c3e50;
+  background-color: #4350c2;
 }
 .pomengrate > span{
-  background-color: #c0392b;
+  background-color: #c0b12b;
 }
 .asbestos > span{
   background-color: #7f8c8d;
