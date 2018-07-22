@@ -1,0 +1,143 @@
+.color_1 > span {
+  background-color: #e67e22;
+  border: 2px solid #e67e22;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+
+}
+
+.color_2 > span {
+  background-color: #F1C40F;
+  border: 2px solid #F1C40F;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.color_3 > span {
+  background-color: #ADF10F;
+  border: 2px solid #ADF10F;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.color_4 > span {
+  background-color: #3CF10F;
+  border: 2px solid #3CF10F;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.color_5 > span {
+  background-color: #0FF153;
+  border: 2px solid #0FF153;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.color_6 > span {
+  background-color: #0FF1C4;
+  border: 2px solid #0FF1C4;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.color_7 > span {
+  background-color: rgb(29, 146, 201);
+  border: 1px solid rgb(29, 146, 201);
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.color_8 > span {
+  background-color:  rgb(29, 103, 201);
+  border: 2px solid  rgb(29, 103, 201);
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+
+
+.color_9 > span{
+  background-color: rgb(19, 124, 194);
+  border: 2px solid  rgb(19, 124, 194);
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+.color_10 > span{
+  background-color: rgb(14, 75, 133);
+  border: 2px solid  rgb(14, 75, 133);
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+.color_11 > span{
+  background-color: rgb(11, 94, 129);
+  border: 2px solid  rgb(11, 94, 129);
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+@mixin meter{
+    height: 27px;  
+   position: relative;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+   margin-bottom: 1em;
+   display: block;
+   height: 100%;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+   position: relative;
+   overflow: hidden;
+   margin-left: 4px;
+   color: #fff;
+}
+
+.color_1 > span {
+ background-color: #e67e22;
+ border:2px solid #e67e22;
+ @include meter;
+}
+.color_2 > span {
+ background-color: #F1C40F;
+ border:2px solid #F1C40F;
+ @include meter
+}
+.color_3  > span{
+ background-color: #ADF10F;
+ border:2px solid #ADF10F;
+ @include meter
+}
+.color_4  > span{
+ background-color: #3CF10F;
+ border:2px solid #3CF10F;
+ @include meter
+}
+.color_5  > span{
+ background-color: #0FF153;
+ border:2px solid #0FF153;
+ @include meter
+}
+.color_6  > span{
+ background-color: #0FF1C4;
+ border:2px solid #0FF1C4;
+ @include meter
+}
+.color_7 > span{
+ background-color: #0FF1C4;
+ border:2px solid #0FF1C4;
+ @include meter
+}

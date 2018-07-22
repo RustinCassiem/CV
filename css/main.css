@@ -86,8 +86,8 @@ ins, mark {text-decoration: none}
 mark {background: #c47529}
 ins {background: #d49855}
 del {text-decoration: line-through}
-::-moz-selection {background: #E74C3C; color: #fff; text-shadow: none} /* selected text */
-::selection {background: #E74C3C; color: #fff; text-shadow: none} /* selected text */
+::-moz-selection {background: rgba(62, 226, 84, 0.836); color: #fff; text-shadow: none} /* selected text */
+::selection {background: rgba(62, 226, 84, 0.836); color: #fff; text-shadow: none} /* selected text */
 
 /* OTHERS */
 strong, b, dt { font-weight: bold}
@@ -451,7 +451,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
   color: #fff;
   font-weight: bold;
   font-size: 13px;
-  font-family:'Open Sans', sans-serif
+  font-family:'Open Sans', sans-serif;
   line-height: 1;
   *display:inline;
   *zoom:1;
@@ -479,7 +479,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
   border-radius: .25em;
 }
 .label-info {
-  background-color: #5bc0de;
+  background-color: #0FADF1;
 }
 
 .label-info[href]:hover,
@@ -532,11 +532,11 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 /* Meters */
 .meter { 
   height: 27px;  /* Can be anything */
-  position: relative;
+  width: 100%;
   border: 2px solid #9e9e9ec5;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  border-radius: 4px;
+  border-radius: 5px;
   margin-bottom: 1em;
 }
 .meter > span {
@@ -544,17 +544,15 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
   height: 100%;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
-  border-radius: 4px;
-
-
-  position: relative;
-  overflow: hidden;
+  border-radius: 2px;
+  
 }
-.meter > span  > span{
+.meter > span  > span{ /*controls words inside meter */
   margin-left: 4px;
   color: #fff;
 }
 .meter > span:after, .animate > span > span {
+  margin-left: 10em;  
   content: "";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -608,35 +606,41 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
    background-position: 50px 50px;
  } */
 }
-
-.emerald > span {
-  background-color: #56ce9c;
-
-}
-
-.carrot > span {
+.color_1 .meter  > span {
   background-color: #e67e22;
+}
+.color_2 .meter> span {
+  background-color: #F1C40F;
 
 }
-.wisteria > span{
-  background-color: #8e44ad;
+.color_3 .meter > span{
+  background-color: #ADF10F;
 }
-.sunflower > span{
-  background-color: #f1c40f;
+.color_4 .meter > span{
+  background-color: #3CF10F;
 }
-.midnight > span{
-  background-color: #4350c2;
+.color_5 .meter > span{
+  background-color: #0FF153;
 }
-.pomengrate > span{
-  background-color: #c0b12b;
+.color_6  > span{
+  background-color: rgb(83, 255, 221);
 }
-.asbestos > span{
-  background-color: #7f8c8d;
+.color_7 > span{
+  background-color: rgb(67, 139, 170);
 }
-.nostripes > span > span, .nostripes > span:after {
-  -webkit-animation: none;
-  background-image: none;
+.color_8 .meter> span{
+  background-color: rgb(15, 241, 241);
 }
+.color_9 > span{
+  background-color: rgb(19, 124, 194);
+}
+.color_10 > span{
+  background-color: rgb(14, 75, 133);
+}
+.color_11 > span{
+  background-color: rgb(11, 94, 129);
+}
+
 /* Footer */
 footer{
   text-align: center;
