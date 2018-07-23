@@ -479,7 +479,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
   border-radius: .25em;
 }
 .label-info {
-  background-color: #0FADF1;
+  background-color: #0FF1C4;
 }
 
 .label-info[href]:hover,
@@ -512,7 +512,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .label-success {
-  background-color: #5cb85c;
+  background-color: #0FF1C4;
 }
 
 .label-success[href]:hover,
