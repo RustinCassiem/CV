@@ -479,7 +479,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
   border-radius: .25em;
 }
 .label-info {
-  background-color: #0FF1C4;
+  background-color: #ff9f51;
 }
 
 .label-info[href]:hover,
@@ -512,7 +512,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .label-success {
-  background-color: #0FF1C4;
+  background-color: #ff9f51;
 }
 
 .label-success[href]:hover,
@@ -606,7 +606,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
    background-position: 50px 50px;
  } */
 }
-.color_1 .meter  > span {
+/* .color_1 .meter  > span {
   background-color: #e67e22;
 }
 .color_2 .meter> span {
@@ -639,7 +639,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 }
 .color_11 > span{
   background-color: rgb(11, 94, 129);
-}
+} */
 
 /* Footer */
 footer{

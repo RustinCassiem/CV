@@ -1,6 +1,6 @@
 .color_1 > span {
-  background-color: 	#0FF1C4;
-  border: 2px solid 	#0FF1C4;
+  background-color: 	#fabd5b;
+  border: 2px solid 	#fabd5b;
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -13,8 +13,8 @@
 }
 
 .color_2 > span {
-  background-color: #F1C40F;
-  border: 2px solid #F1C40F;
+  background-color: #ffb866;
+  border: 2px solid #ffb866;
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -26,8 +26,8 @@
 }
 
 .color_3 > span {
-  background-color: #ADF10F;
-  border: 2px solid #ADF10F;
+  background-color: #ff9f51;
+  border: 2px solid #ff9f51;
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -39,8 +39,8 @@
 }
 
 .color_4 > span {
-  background-color: #3CF10F;
-  border: 2px solid #3CF10F;
+  background-color: #ff8741;
+  border: 2px solid #ff8742;;
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -52,8 +52,8 @@
 }
 
 .color_5 > span {
-  background-color: #0FF153;
-  border: 2px solid #0FF153;
+  background-color: #ec5f27;
+  border: 2px solid #ec5f27;
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -65,8 +65,8 @@
 }
 
 .color_6 > span {
-  background-color: #0FF1C4;
-  border: 2px solid #0FF1C4;
+  background-color: #e6671d;
+  border: 2px solid #e6671d
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -78,8 +78,8 @@
 }
 
 .color_7 > span {
-  background-color: rgb(29, 146, 201);
-  border: 1px solid rgb(29, 146, 201);
+  background-color:#f76f21;
+  border: 1px solid #f76f21;
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -91,8 +91,8 @@
 }
 
 .color_8 > span {
-  background-color:  rgb(29, 103, 201);
-  border: 2px solid  rgb(29, 103, 201);
+  background-color:  #f77f2f;
+  border: 2px solid  #f77f2f;
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -105,8 +105,8 @@
 
 
 .color_9 > span{
-  background-color: rgb(19, 124, 194);
-  border: 2px solid  rgb(19, 124, 194);
+  background-color: #f17b19;
+  border: 2px solid  #f17b19;
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -117,8 +117,8 @@
   color: #fff;
 }
 .color_10 > span{
-  background-color: rgb(14, 75, 133);
-  border: 2px solid  rgb(14, 75, 133);
+  background-color:  #f17b19;
+  border: 2px solid #f17b19 ;
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
@@ -129,8 +129,32 @@
   color: #fff;
 }
 .color_11 > span{
-  background-color: rgb(11, 94, 129);
-  border: 2px solid  rgb(11, 94, 129);
+  background-color: #ff811b ;
+  border: 2px solid #ff811b  ;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+.color_12 > span{
+  background-color: #ff761b ;
+  border: 2px solid #ff761b;
+  height: 27px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  color: #fff;
+}
+.color_13 > span{
+  background-color: #fc7c13 ;
+  border: 2px solid #fc7c13 ;
   height: 27px;
   border-radius: 4px;
   margin-bottom: 1em;
