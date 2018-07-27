@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
@@ -21,7 +21,7 @@ p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldse
 
 /* TYPOGRAPHY */
 /* Composed to a scale of 12px, 14px, 16px, 18px, 21px, 24px, 36px, 48px, 60px and 72px */
-h1, h2, h3, h4, h5, h6 {font-family:'Open Sans', sans-serif;color:#444;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Sunflower', sans-serif;;color:#444;}
 h1 {margin: 0; font-size: 3.75em; line-height: 1.2em; margin-bottom: 0.4em} /* 60px / 72px */
 h2 {margin: 0; font-size: 2em; line-height: 1em; margin-bottom: 0.5em} /* 48px / 48px */
 h3 {margin: 0; font-size: 2.25em; line-height: 1.3333333333333333333333333333333em; margin-bottom: 0.6667em} /* 36px / 48px */ 
@@ -33,7 +33,7 @@ small, p.small {margin: 0; font-size: 0.875em; line-height: 1.714285714285714285
 
 /* CODE */
 pre {white-space: pre; white-space: pre-wrap; word-wrap: break-word} /* Allow line wrapping of 'pre' */
-pre, code, kbd, samp {font-size: 1em; line-height: 1.5em; margin-bottom: 1.5em; font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, monospace}
+pre, code, kbd, samp {font-size: 1em; line-height: 1.5em; margin-bottom: 1.5em; font-family: 'Sunflower', sans-serif;}
 
 /* TABLES */
 table {border-collapse: collapse; border-spacing: 0; margin-bottom: 1.5em}
@@ -69,7 +69,7 @@ dt {font-family:Futura, "Century Gothic", AppleGothic, sans-serif}
 /* HYPERLINKS */
 a { 
   text-decoration: none;
-  color: #E74C3C;
+  color: rgb(47, 60, 177);
 }
 a:hover, a:focus, a:active { text-decoration: none; border: none;color: #C0392B }
 /* MEDIA */
@@ -86,8 +86,8 @@ ins, mark {text-decoration: none}
 mark {background: #c47529}
 ins {background: #d49855}
 del {text-decoration: line-through}
-::-moz-selection {background: rgba(62, 226, 84, 0.836); color: #fff; text-shadow: none} /* selected text */
-::selection {background: rgba(62, 226, 84, 0.836); color: #fff; text-shadow: none} /* selected text */
+::-moz-selection {background: rgba(247, 170, 29, 0.836); color: #fff; text-shadow: none} /* selected text */
+::selection {background: rgba(247, 170, 29, 0.836); color: #fff; text-shadow: none} /* selected text */
 
 /* OTHERS */
 strong, b, dt { font-weight: bold}
@@ -262,7 +262,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 
 .tab a.active {
   padding-top: 10px;
-  color: #e74c3c;
+  color: rgb(77, 88, 187);
 }
 .tab a i{
   font-size: 16px;
@@ -479,7 +479,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
   border-radius: .25em;
 }
 .label-info {
-  background-color: #0FF1C4;
+  background-color: #39a8f1;
 }
 
 .label-info[href]:hover,
@@ -503,7 +503,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .label-danger {
-  background-color: #d9534f;
+  background-color: #39a8f1;
 }
 
 .label-danger[href]:hover,
@@ -512,7 +512,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .label-success {
-  background-color: #0FF1C4;
+  background-color: #39a8f1;
 }
 
 .label-success[href]:hover,
@@ -606,40 +606,6 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
    background-position: 50px 50px;
  } */
 }
-.color_1 .meter  > span {
-  background-color: #e67e22;
-}
-.color_2 .meter> span {
-  background-color: #F1C40F;
-
-}
-.color_3 .meter > span{
-  background-color: #ADF10F;
-}
-.color_4 .meter > span{
-  background-color: #3CF10F;
-}
-.color_5 .meter > span{
-  background-color: #0FF153;
-}
-.color_6  > span{
-  background-color: rgb(83, 255, 221);
-}
-.color_7 > span{
-  background-color: rgb(67, 139, 170);
-}
-.color_8 .meter> span{
-  background-color: rgb(15, 241, 241);
-}
-.color_9 > span{
-  background-color: rgb(19, 124, 194);
-}
-.color_10 > span{
-  background-color: rgb(14, 75, 133);
-}
-.color_11 > span{
-  background-color: rgb(11, 94, 129);
-}
 
 /* Footer */
 footer{
@@ -671,13 +637,12 @@ Change widths as necessary
   body {
 
   }
-}
 
 /* MOBILE LANDSCAPE */
 @media only screen and (min-width: 480px) {
   body {
-
   }
+
 }
 
 /* SMALL TABLET */
