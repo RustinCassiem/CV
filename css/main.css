@@ -185,6 +185,14 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
   padding-bottom: 1em;
   clear: both;
 }
+
+.indent{
+  margin-left: 20px;
+}
+
+.indent_ol{
+  margin-left:15%;
+}
 /* Backgrounds */
 
 .bg-1{
