@@ -86,7 +86,7 @@ ins, mark {text-decoration: none}
 mark {background: #c47529}
 ins {background: #d49855}
 del {text-decoration: line-through}
-::-moz-selection {background:  rgba(29, 247, 236, 0.836); color: #fff; text-shadow: none} /* selected text */
+::-moz-selection {background: rgba(247, 170, 29, 0.836); color: #fff; text-shadow: none} /* selected text */
 ::selection {background: rgba(29, 247, 236, 0.836); color: #fff; text-shadow: none} /* selected text */
 
 /* OTHERS */
@@ -540,7 +540,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 /* Meters */
 .meter { 
   height: 27px;  /* Can be anything */
-  width: 100%;
+  width: 97%;
   border: 2px solid #9e9e9ec5;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
