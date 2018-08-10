@@ -191,7 +191,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 
 .indent_ol{
   margin-left:15%;
-  margin-bottom: 5px;
+  margin-bottom: -5px;
 }
 /* Backgrounds */
 
