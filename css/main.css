@@ -186,11 +186,12 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .indent{
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .indent_ol{
   margin-left:15%;
+  margin-bottom: 5px;
 }
 /* Backgrounds */
 
@@ -518,7 +519,7 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 }
 
 .label-success {
-  background-color: #39a8f1;
+  background-color: #149bf5af;
 }
 
 .label-success[href]:hover,
@@ -628,35 +629,36 @@ body {width: 97%; margin: 0 auto} /* Center page without wrapper */
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rainbow{
- 0%{color: orange;}	
- 10%{color: purple;}	
- 20%{color: red;}
- 40%{color: yellow;}
- 60%{color: green;}
- 100%{color: blue;}
- 100%{color: orange;}	
+ 0%{color: rgb(255, 0, 0);}	
+ 10%{color: rgb(255, 239, 11);}	
+ 20%{color: rgb(43, 255, 0);}
+ 40%{color: rgb(0, 17, 255);}
+ 60%{color: rgb(204, 0, 255);}
+ 100%{color:rgb(255, 0, 200);}
+ 100%{color: rgb(255, 0, 0);}	
 }
 /* Internet Explorer */
 @-ms-keyframes rainbow{
- 0%{color: orange;}	
- 10%{color: purple;}	
- 20%{color: red;}
- 40%{color: yellow;}
- 60%{color: green;}
- 100%{color: blue;}
- 100%{color: orange;}	
-}
+  0%{color: rgb(255, 0, 0);}	
+  10%{color: rgb(255, 239, 11);}	
+  20%{color: rgb(43, 255, 0);}
+  40%{color: rgb(0, 17, 255);}
+  60%{color: rgb(204, 0, 255);}
+  100%{color:rgb(255, 0, 200);}
+  100%{color: rgb(255, 0, 0);}	
+   }
 
 /* Standar Syntax */
 @keyframes rainbow{
- 0%{color: orange;}	
- 10%{color: purple;}	
- 20%{color: red;}
- 40%{color: yellow;}
- 60%{color: green;}
- 100%{color: blue;}
- 100%{color: orange;}
+  0%{color: rgb(255, 0, 0);}	
+  10%{color: rgb(255, 239, 11);}	
+  20%{color: rgb(43, 255, 0);}
+  40%{color: rgb(0, 17, 255);}
+  60%{color: rgb(204, 0, 255);}
+  100%{color:rgb(255, 0, 200);}
+  100%{color: rgb(255, 0, 0);}	
 }
+
 
 /* Footer */
 footer{
