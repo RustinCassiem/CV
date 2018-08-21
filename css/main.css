@@ -752,6 +752,8 @@ Change widths as necessary
   .g3 {width:98.0%}
 }
 
+ .item
+
 @media only screen and (min-width: 1280px) { 
   /* DESKTOP */
   body {
