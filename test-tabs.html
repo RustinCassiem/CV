@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tab Test - Rustin Cassiem CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Basic tab styles for testing */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+        }
+        
+        .nav-tabs {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            margin: 0 0 20px 0;
+            padding: 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .nav-item a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #6b7280;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .nav-item.active a,
+        .nav-item a:hover {
+            color: #2563eb;
+            border-bottom-color: #2563eb;
+            background: rgba(37, 99, 235, 0.1);
+        }
+        
+        .tab-content {
+            display: none;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            min-height: 400px;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .debug {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            max-width: 300px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="debug" id="debug">Debug info will appear here</div>
+    
+    <h1>CV Tab Test</h1>
+    
+    <!-- Navigation -->
+    <ul class="nav-tabs">
+        <li class="nav-item active">
+            <a href="#about" data-tab="about">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#experience" data-tab="experience">
+                <i class="fas fa-briefcase"></i>
+                <span>Experience</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#skills" data-tab="skills">
+                <i class="fas fa-code"></i>
+                <span>Skills</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#education" data-tab="education">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Education</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#projects" data-tab="projects">
+                <i class="fas fa-folder-open"></i>
+                <span>Projects</span>
+            </a>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <section id="about" class="tab-content active">
+        <h2>About Me</h2>
+        <p>This is the About tab content. If you can see this and click other tabs, the basic functionality works.</p>
+        <p>Junior Web Applications Engineer with expertise in modern web technologies.</p>
+    </section>
+
+    <section id="experience" class="tab-content">
+        <h2>Work Experience</h2>
+        <p>This is the Experience tab content.</p>
+        <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>Junior Web Developer</h3>
+            <p><strong>Tech Solutions Inc.</strong> | 2023 - Present</p>
+            <p>Developing responsive web applications using React and Node.js.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="tab-content">
+        <h2>Technical Skills</h2>
+        <p>This is the Skills tab content.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+            <div style="background: #f3f4f6; padding: 15px; border-radius: 8px;">
+                <h4>Frontend</h4>
+                <p>HTML5, CSS3, JavaScript, React, Vue.js</p>
+            </div>
+            <div style="background: #f3f4f6; padding: 15px; border-radius: 8px;">
+                <h4>Backend</h4>
+                <p>Node.js, PHP, MySQL, MongoDB</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="tab-content">
+        <h2>Education & Certifications</h2>
+        <p>This is the Education tab content.</p>
+        <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>Bachelor of Computer Science</h3>
+            <p><strong>University of Cape Town</strong> | 2020 - 2023</p>
+        </div>
+    </section>
+
+    <section id="projects" class="tab-content">
+        <h2>Featured Projects</h2>
+        <p>This is the Projects tab content.</p>
+        <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3>E-commerce Platform</h3>
+            <p>Full-stack solution built with React, Node.js, and MongoDB.</p>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            const debug = $('#debug');
+            
+            function updateDebug(message) {
+                debug.html(debug.html() + '<br>' + message);
+                console.log(message);
+            }
+            
+            updateDebug('Page loaded');
+            updateDebug('Nav items found: ' + $('.nav-item').length);
+            updateDebug('Tab contents found: ' + $('.tab-content').length);
+            
+            // Tab functionality
+            $('.nav-item a').on('click', function(e) {
+                e.preventDefault();
+                
+                const targetTab = $(this).data('tab');
+                updateDebug('Clicked tab: ' + targetTab);
+                
+                if (!targetTab) {
+                    updateDebug('ERROR: No data-tab attribute');
+                    return;
+                }
+
+                const targetSection = $('#' + targetTab);
+                updateDebug('Target section found: ' + (targetSection.length > 0));
+                
+                if (targetSection.length === 0) {
+                    updateDebug('ERROR: Section not found');
+                    return;
+                }
+
+                // Remove active classes
+                $('.nav-item').removeClass('active');
+                $('.tab-content').removeClass('active');
+
+                // Add active classes
+                $(this).parent().addClass('active');
+                targetSection.addClass('active');
+                
+                updateDebug('SUCCESS: Tab switched to ' + targetTab);
+            });
+            
+            updateDebug('Event listeners attached');
+        });
+    </script>
+</body>
+</html>

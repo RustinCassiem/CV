@@ -1,392 +1,670 @@
 <!DOCTYPE html>
-
-<html class="no-js">
+<html lang="en" class="no-js">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Rustin Cassiem CV</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="images/Logo2.PNG">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-  <script src="js/vendor/jquery.hashchange.min.js"></script>
-  <script src="js/vendor/jquery.easytabs.min.js"></script>
-  <script src="js/main.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Rustin Cassiem - Web Developer</title>
+    <meta name="description" content="Web Developer with expertise in HTML, CSS, JavaScript and full-stack development">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/modern-cv.css">
+    
+
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-  <body class="bg-fixed bg-1">
-   <div class="main-container">
-    <div class="main wrapper clearfix">
-      <!-- Header Start -->
-        <header id="header">
-            <div id="logo">
-                <h2> Rustin Cassiem</h2>
-                <h4> Junior Web Applications Engineer</h4>
+<body>
+    <!-- Welcome Overlay with Animations -->
+    <div id="welcomeOverlay" class="welcome-overlay">
+        <div class="welcome-text">
+            Welcome to Rustin's CV! 🎉
+        </div>
+    </div>
+    
+    <!-- Confetti Container -->
+    <div id="confettiContainer" class="confetti-container"></div>
+    
+    <div class="cv-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="images/profile.PNG" alt="Rustin Cassiem" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="name">Rustin Cassiem</h1>
+                        <h2 class="title">Web Developer</h2>
+                        <p class="bio"></p>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>rustin123@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>064 684 5953</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Cape Town, South Africa</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span><a href="https://www.linkedin.com/in/rustin-cassiem-a42540167/">Rustin Cassiem</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span><a href="https://github.com/RustinCassiem/">Rustin Cassiem GitHub</a></span>
+                    </div>
+                </div>
             </div>
         </header>
-        <!-- Header End -->
-        <!-- Main Tab Container -->
-        <div id="tab-container" class="tab-container">
-          <!-- Tab List -->
-            <ul class='etabs'>
-                <li class='tab' id="tab-about">
-                  <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <ul class="nav-tabs">
+                <li class="nav-item active">
+                    <a href="#about" data-tab="about">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
                 </li>
-                <!-- <li class='tab'>
-                  <a href="#portfolio"><i class="icon-heart"></i><span> Portfolio</span></a>
-                </li> -->
-                <li class='tab'>
-                  <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
+                <li class="nav-item">
+                    <a href="#experience" data-tab="experience">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Experience</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" data-tab="projects">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Current Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" data-tab="skills">
+                        <i class="fas fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" data-tab="education">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" data-tab="contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
                 </li>
             </ul>
-          <!-- End Tab List -->
-            <div id="tab-data-wrap">
-              <!-- About Tab Data -->
-                <div id="about">
-                    <section class="clearfix">
-                        <div class="g2">
-                            <div class="photo">
-                                <img src="images/dp.png" alt="Rustin Cassiem">
-                            </div>
-                            <div class="info">
-                                <h2>Rustin Cassiem</h2>
-                                <h4>Junior Web Developer</h4>
-                                <p> I have been working with computers/hardware for 6 years, building and modifying them as a hobby and just to pass time. I recently started working with software and I have been creating websites for a few months. I learnt HTML, CSS and JavaScript basics in a 6 month course.</p> 
-                                <p> I managed a gaming server which had a frequent amount of players entering daily. I had to manage a staff team of 4 members that helped me manage the smooth running of the server.</p>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About Tab -->
+<section id="about" class="tab-content active">
+  <h3>About Me</h3>
+  <div class="about-content">
+    <p>I’ve been immersed in the world of computers and hardware for over six years, driven by a deep passion for building and modifying systems as both a hobby and a way to explore new ideas. Recently, I shifted my focus to software development, taking on the exciting challenge of creating websites. Over the past few months, I’ve honed my skills in HTML, CSS, and JavaScript,Python through a dedicated six-month course, laying a solid foundation for future growth.</p>
+
+    <p>Previously, I managed a busy gaming server that welcomed a steady stream of daily players. In this role, I led a team of four staff members, ensuring seamless gameplay and fostering a positive community environment.</p>
+
+    <p>I’m always eager to learn new things and expand my technical expertise, especially when it comes to mastering new coding languages and building innovative solutions. My enthusiasm for crafting efficient web applications is matched only by my drive to continuously improve my skills and contribute to meaningful projects.</p>
+  </div>
+
+  <div class="main-links">
+    <ul>
+      <li><a href="https://github.com/RustinCassiem/" target="_blank">View my work, both in progress and completed</a></li>
+      <li><a href="#contact">Hire me for your next project</a></li>
+    </ul>
+  </div>
+
+  <div class="hobbies-section">
+    <h4>Hobbies & Interests</h4>
+    <div class="hobbies-list">
+      <span class="hobby-tag">Lifelong learning and self-improvement</span><br>
+      <span class="hobby-tag">Video Games</span><br>
+      <span class="hobby-tag">Building and modifying computers</span><br>
+      <span class="hobby-tag">Experimenting with home lab projects and app development</span><br>
+    </div>
+  </div>
+</section>
+
+
+            <!-- Experience Tab -->
+            <section id="experience" class="tab-content">
+                <h3>Work Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2018</div>
+                            <h4>Full-stack Web Development Course</h4>
+                            <h5>Life Choices Academy</h5>
+                            <p>Completed a comprehensive 6-month full-time course covering modern web development technologies.</p>
+                            <ul>
+                                <li>HTML5 & CSS3 fundamentals</li>
+                                <li>JavaScript and jQuery</li>
+                                <li>SASS preprocessor</li>
+                                <li>Node.js backend development</li>
+                                <li>Design Thinking principles</li>
+                                <li>Front End Frameworks</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2016 - 2018</div>
+                            <h4>Programming Tutor</h4>
+                            <h5>Harold Cressy High School (Volunteer)</h5>
+                            <p>Taught simple coding using Scratch programming language to high school students for 2 years, which allowed me to impart my knowledge and develop valuable leadership skills.</p>
+                            <ul>
+                                <li>Sharpened my coding skills</li>
+                                <li>Imparted knowledge to students</li>
+                                <li>Learned leadership skills</li>
+                                <li>Developed teaching and communication abilities</li>
+                            </ul>
+                            <p><a href="https://scratch.mit.edu/projects/240333244/" target="_blank">View example of my work</a></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2016 - 2017</div>
+                            <h4>Gaming Server Administrator</h4>
+                            <h5>Minecraft Server (MelonCube)</h5>
+                            <p>Administered a gaming server for Minecraft, managing daily operations and a team of staff members.</p>
+                            <ul>
+                                <li>Basic HTML development</li>
+                                <li>Deployed plugins using prebuilt scripts</li>
+                                <li>Team work and management</li>
+                                <li>Patience and communication skills</li>
+                                <li>Server maintenance and troubleshooting</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2015 - 2018</div>
+                            <h4>Computer Hardware Specialist</h4>
+                            <h5>Self-taught (Personal Projects)</h5>
+                            <p>Learned to configure and repair computers in my spare time, developing strong technical troubleshooting skills.</p>
+                            <ul>
+                                <li>Troubleshooting hardware issues</li>
+                                <li>Configured software for computers and servers</li>
+                                <li>Building and configuring new computer hardware</li>
+                                <li>Maintaining computer networks and servers</li>
+                                <li>Setting up and configuring computer systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Current Projects Tab -->
+            <section id="projects" class="tab-content">
+                <h3>Current Projects</h3>
+                <div class="projects-container">
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h4>SecureShellBot</h4>
+                            <div class="project-status">
+                                <span class="status-badge active">Active Development</span>
                             </div>
                         </div>
-                        <div class="g1">
-                            <div class="main-links sidebar">
+                        <div class="project-content">
+                            <p class="project-description">
+                                SecureShellBot is an innovative Telegram bot designed to provide secure shell access and server management capabilities directly through Telegram. This project demonstrates advanced integration between chat platforms and system administration tools.
+                            </p>
+                            <div class="project-features">
+                                <h5>Key Features:</h5>
                                 <ul>
-                                    <li><a href="https://github.com/RustinCassiem/"> View My work that I am working on and finished.</a></li>
-                                    <!-- <li>
-                                        <a href="#portfolio">My Portfolio</a>
-                                    </li> -->
-                                    <li><a href="#contact">Hire me for your next project</a> </li>
+                                    <li>Secure SSH connection management through Telegram</li>
+                                    <li>Real-time server monitoring and status updates</li>
+                                    <li>Role-based access control for security</li>
+                                    <li>Command execution with proper authentication</li>
+                                    <li>Integration with Telegram's permission system</li>
                                 </ul>
                             </div>
+                            <div class="project-tech">
+                                <h5>Technologies Used:</h5>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Telegram.js</span>
+                                    <span class="tech-tag">SSH2</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Linux</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/RustinCassiem/SecureShellBot" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                                </a>
+                            </div>
                         </div>
-                        <div class="break"></div>
-                        <div class="contact-info">
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                              <i class="icon-envelope"></i>
-                              <div class="item-data">
-                                <h3><a href="mailto:rustinc123@gmail.com">rustinc123@gmail.com</a></h3>
-                                <p>Email Address</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                                <i class="fab fa-linkedin-in"></i>
-                              <div class="item-data">
-                                <h3><a href="https://www.linkedin.com/in/rustin-cassiem-a42540167/">Rustin Cassiem</a></h3>
-                                <p>Linkdein</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="g1">
-                            <div class="item-box clearfix">
-                             <i class="fab fa-github"></i>
-                              <div class="item-data">
-                                <h3><a href="https://github.com/RustinCassiem/">Rustin Cassiem</a></h3>
-                                <p>Want to see my work ?</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </section><!-- content -->
-              <!-- End About Tab Data -->
-              <!-- Resume Tab Data -->
-              <div class="break"></div>
-                <div id="resume">
-                    <section class="clearfix">
-                    <div class="g2">
-                        <h3>
-                            Work Experience
-                        </h3>
-                        <ul class="no-list work">
-                          <li>
-                            <h5> HomeLab Enthusiast</h5><span class="label label-info color_3" >2021-2024</span>
-                            <p>Currently runnning my own homelab, using a raspberry pi as my main server and a mini pc as my secondary,Im using cloudflare tunnel to make some apps open to the internet and I run a variety of applications  </p>
-                            <ol>Lessons learnt:</ol>
-                                <ol>Networking</ol>
-                                <ol>Security layers</ol>
-                                <ol>Docker</ol>
-                                <ol>Clouflare</ol>
-                                <ol>Ubuntu and Debain</ol>
-                                <ol>Artificial Intelligence (building my own ai to assist in my homelab)</ol>
-                        </li>  
-                        <li>
-                            <h5> Programing tutor</h5><span class="label label-info color_3" >2016-2018</span>
-                            <p>Taught simple coding using Scratch on a volunteer basis to a class at Harold Cressy High School for 2 years which allowed me to impart my knowledge and taught me valuable leadership skills.This is an example of my work<a href="https://scratch.mit.edu/projects/240333244/"> here.</a></p>
-                            <ol>Lessons learnt:</ol>
-                                <ol>Sharpened my coding skills</ol>
-                                <ol>Imparted my knowledge </ol>
-                                <ol>Learned leadership skills</ol>
-                        </li>   
-                           
-                        <li>
-                            <h5>Learned to configure and repair computers in my spare time</h5><span class="label label-info color_3" >2015-2018</span>
-                                <p></p>
-                            <ol>Lessons learnt:</ol>
-                            <ol>Troubleshooting hardware</ol>
-                            <ol>Configured software for computers and servers</ol>
-                            <ol>Building and configuring new computer hardware</ol>
-                            <ol>Maintaining computer networks and servers </ol>
-                            <ol>Setting up and configuring computer systems</ol>     
-                        </li>
-                        <li>
-                        <h5>
-                            Gaming server administrator
-                        </h5><span class="label label-info color_3" >2016-2017</span>
-                        <p>I administrated a gaming server for Minecraft</p>   <p> hosted by MelonCube</p>
-                        
-                            <ol>LessonS learnt:</ol>
-                            <ol>Basic HTML </ol>
-                            <ol>Deployed plugins from internet repository using prebuilt scripts</ol>
-                            <ol>Team work</ol>
-                            <ol>Patience</ol> 
-                            <ol>Communication</ol> 
-                         </li>
-                         
-                        </ul>
-                        <h3>
-                            Education
-                        </h3>
-                        <ul class="no-list work">
-                            <li>
-                                <h5>
-                                    Life Choices Academy
-                                </h5><span class="label label-info color_3">2018</span>
-                                <p>Fullstack Web Development Course duration : 6 months (full time)</p>
-                                    <ol>Focus:</ol>
-                                    <ol>HTML</ol>
-                                    <ol>CSS</ol>
-                                    <ol>SASS</ol>
-                                    <ol>Node</ol>
-                                    <ol>Design Thinking</ol>
-                                    <ol>JavaScript</ol>
-                                    <ol>Front End Frameworks</ol>
-                                    <br>
-                                    <p>Graduated Front End Development from Life Choices</p> 
-                                
-                            </li>
-                            <li>
-                                <h5>
-                                    Harold Cressy High School 
-                                </h5><span class="label label-info color_3" >2013-2017</span>
-                                    <p>Subjects:</p>
-                               
-                                    <ol>Physical Science</ol>
-                                    <ol>Mathematical Literacy</ol>
-                                    <ol>Life Sciences</ol>
-                                    <ol>Geography</ol>
-                                    <ol>English</ol>
-                                    <ol>Afrikaans</ol>
-                                    <ol>Life Orientation</ol>
-                                   
-                                    
-                            </li>
-                            
-                        </ul>
                     </div>
-                        <div class="g1">
-                            <div class="sidebar">
-                                    <h3 class="indent">Hobbies</h3>
-                                    <div class="indent_ol"><ol>Cycling</ol></div>
-                                    <div class="indent_ol"> <ol>Learning new things</ol></div>
-                                    <div class="indent_ol"><ol>Video games </ol> </div>
-                                    <div class="indent_ol"><ol>Building computers</ol> </div>
-                                    <div class="indent_ol"><ol> Psychology </ol></div>
-                            
-                                <h5 class="indent">Skills</h5>
-                                <div class="indent_ol"><ol>Self-motivation </ol></div>
-                             
-                                <div class="indent_ol"><ol>Communication </ol></div>
-                               
-                                <div class="indent_ol"><ol>Leadership </ol></div>
-                               
-                                <div class="indent_ol"><ol>Team work </ol></div>
-                               
-                                <div class="indent_ol"> <ol>Problem solving</ol></div>
-                              
-                                <div class="indent_ol"><ol>Organisation</ol></div>
-                               
-                                  <div class="indent_ol"> <ol>Confidence</ol></div>
-                               
-                                <h5  class="indent"> Software </h5>
-                                <div class="indent_ol"><ol>Visual Studio Code</ol> </div>
-                              
-                                <div class="indent_ol"> <ol>Atom</ol> </div>
-                              
-                                
-                                <h5 class="indent">System software</h5>
-                               
-                                 <div class="indent_ol"><ol>WordPress</ol></div>
-                                 <div class="indent_ol"><ol>Drupal</ol></div>
-                                 <div class="indent_ol"><ol>Ansible Semaphore</ol></div>
-                                <div class="break"></div>
-                            
-                                   <h5 class="indent"> Microsoft </h5>
-                                <div class="indent_ol"> <ol>Word</ol></div>
+                </div>
+            </section>
 
-                         
-                                  <div class="indent_ol"><ol>PowerPoint</ol></div>
-                            
-                                   <div class="indent_ol"> <ol>Outlook</ol></div>
-                             
-                                  <div class="indent_ol"><ol>Excel</ol></div>
-                               
-                                <h5 class="indent">Programming Language</h5>
-                                <div class="indent_ol"><ol>HTML</ol></div>
-                             
-                                <div class="indent_ol"><ol>CSS</ol></div>
-                              
-                                <div class="indent_ol"><ol>jQuery/JavaScript</ol></div>
+            <!-- Skills Tab -->
+            <section id="skills" class="tab-content">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">jQuery/JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Software & Tools</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Visual Studio Code</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Atom</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">WordPress</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 35%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Microsoft Office</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Word</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 74%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PowerPoint</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Excel</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Outlook</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 83%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h4>Soft Skills</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Self-motivation</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Leadership</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 55%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Team work</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Problem solving</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Organisation</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Communication</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 68%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Confidence</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              <!-- End Resume Tab Data -->
-              <!-- Portfolio Tab Data -->
-                <!-- <div id="portfolio">
-                    <section class="clearfix">
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/1" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/1" class="btn">Full View</a>
-                                    </div>
-                                </div>
+            </section>
+
+            <!-- Education Tab -->
+            <section id="education" class="tab-content">
+                <h3>Education</h3>
+                <div class="education-grid">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>Fullstack Web Development Course</h4>
+                            <h5>Life Choices Academy</h5>
+                            <span class="period">2018 (6 months full-time)</span>
+                            <p>Comprehensive course covering modern web development technologies and best practices.</p>
+                            <div class="subjects">
+                                <span class="subject-tag">HTML</span>
+                                <span class="subject-tag">CSS</span>
+                                <span class="subject-tag">SASS</span>
+                                <span class="subject-tag">Node.js</span>
+                                <span class="subject-tag">Design Thinking</span>
+                                <span class="subject-tag">JavaScript</span>
+                                <span class="subject-tag">Front End Frameworks</span>
+                            </div>
+                            <p><strong>Achievement:</strong> Graduated Front End Development from Life Choices</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>High School Diploma</h4>
+                            <h5>Harold Cressy High School</h5>
+                            <span class="period">2013 - 2017</span>
+                            <p>Completed secondary education with focus on sciences and mathematics.</p>
+                            <div class="subjects">
+                                <span class="subject-tag">Physical Science</span>
+                                <span class="subject-tag">Mathematical Literacy</span>
+                                <span class="subject-tag">Life Sciences</span>
+                                <span class="subject-tag">Geography</span>
+                                <span class="subject-tag">English</span>
+                                <span class="subject-tag">Afrikaans</span>
+                                <span class="subject-tag">Life Orientation</span>
                             </div>
                         </div>
-                           <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/2" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/2" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/3" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/3" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="break"></div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/4" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/4" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/5" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/5" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/business/2" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/business/2" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </section>
-                </div> --> 
-              <!-- End Portfolio Data -->
-               </div>
-              <!-- Contact Tab Data -->
-                <div id="contact">
-                    <section class="clearfix">
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-globe"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>My Address</h4>
-                              <p>Ask me via email</p>
-                              <h4><a href="mailto:rustinc123@gmail.com">rustinwp@gmail.com</a></h4>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-phone"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>Mobile Number</h4>
-                              <p>request via mail</p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="g1">
-                         <div class="sny-icon-box">
-                           <div class="sny-icon">
-                              <i class="icon-user"></i>
-                            </div>
-                            <div class="sny-icon-content">
-                              <h4>About Me</h4>
-                              <p>I love learning new things and expanding my knowledge of new coding languages  </p>
-                            </div>
-                         </div>
-                       </div>
-                       <div class="break"></div>
-                       
-                    </section>
+                    </div>
                 </div>
-              <!-- End Contact Data -->
-            </div>
-        </div>
-        <!-- End Tab Container -->
-        <footer>
-            <p class="rainbow" id="Egg" onclick="Egg()">Designed with lots of love and dedication</p> 
+            </section>
+
+            <!-- Contact Tab -->
+            <section id="contact" class="tab-content">
+                <h3>Get In Touch</h3>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p><a href="mailto:rustinc123@gmail.com">rustinc123@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Mobile Number</h4>
+                            <p>064 684 5953</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>My Address</h4>
+                            <p>Ask me via email</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/rustin-cassiem-a42540167/" target="_blank">Rustin Cassiem</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/RustinCassiem/" target="_blank">Want to see my work?</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>About Me</h4>
+                            <p>I love learning new things and expanding my knowledge of new coding languages</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p onclick="showEasterEgg()" style="cursor: pointer;">Designed with lots of love and dedication</p>
         </footer>
-    </div><!-- #main -->
-</div><!-- #main-container -->
+    </div>
 
+    <!-- Simple, working JavaScript -->
+    <script>
+        // Confetti and Firework Animation Functions
+        function createConfetti() {
+            const container = document.getElementById('confettiContainer');
+            const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7', '#dda0dd', '#98d8c8'];
+            
+            for (let i = 0; i < 150; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti-piece';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.animationDelay = Math.random() * 2 + 's';
+                confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                container.appendChild(confetti);
+                
+                // Remove confetti after animation
+                setTimeout(() => {
+                    if (confetti.parentNode) {
+                        confetti.parentNode.removeChild(confetti);
+                    }
+                }, 5000);
+            }
+        }
+        
+        function createFirework(x, y) {
+            const container = document.getElementById('confettiContainer');
+            const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4', '#ffeaa7', '#dda0dd'];
+            
+            // Create main firework
+            const firework = document.createElement('div');
+            firework.className = 'firework';
+            firework.style.left = x + 'px';
+            firework.style.top = y + 'px';
+            firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            container.appendChild(firework);
+            
+            // Create particles
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'firework-particle';
+                particle.style.left = x + 'px';
+                particle.style.top = y + 'px';
+                particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                
+                const angle = (i * 18) * Math.PI / 180;
+                const distance = 50 + Math.random() * 50;
+                const dx = Math.cos(angle) * distance;
+                const dy = Math.sin(angle) * distance;
+                
+                particle.style.setProperty('--dx', dx + 'px');
+                particle.style.setProperty('--dy', dy + 'px');
+                
+                container.appendChild(particle);
+                
+                // Remove particle after animation
+                setTimeout(() => {
+                    if (particle.parentNode) {
+                        particle.parentNode.removeChild(particle);
+                    }
+                }, 2000);
+            }
+            
+            // Remove main firework after animation
+            setTimeout(() => {
+                if (firework.parentNode) {
+                    firework.parentNode.removeChild(firework);
+                }
+            }, 1500);
+        }
+        
+        function startCelebration() {
+            // Show welcome overlay
+            const overlay = document.getElementById('welcomeOverlay');
+            overlay.style.display = 'flex';
+            
+            // Start confetti immediately
+            createConfetti();
+            
+            // Create multiple fireworks at different times and positions
+            const fireworkTimes = [500, 1000, 1500, 2000, 2500];
+            fireworkTimes.forEach(time => {
+                setTimeout(() => {
+                    const x = Math.random() * window.innerWidth;
+                    const y = Math.random() * (window.innerHeight * 0.6) + 50;
+                    createFirework(x, y);
+                }, time);
+            });
+            
+            // More confetti bursts
+            setTimeout(() => createConfetti(), 1500);
+            setTimeout(() => createConfetti(), 3000);
+        }
 
-<style>
-    
-</style>
-<script>
-  function Egg() {
-      alert("Easter Egg found");
-  }
+        $(document).ready(function() {
+            console.log('CV loaded - initializing tabs and celebrations');
+            
+            // Start celebration on first load
+            startCelebration();
+            
+            // Simple tab functionality that works
+            $('.nav-item a').on('click', function(e) {
+                e.preventDefault();
+                
+                const targetTab = $(this).data('tab');
+                console.log('Clicked tab:', targetTab);
+                
+                if (!targetTab) return;
 
-</script>
- 
-  
+                // Remove active classes
+                $('.nav-item').removeClass('active');
+                $('.tab-content').removeClass('active');
+
+                // Add active classes
+                $(this).parent().addClass('active');
+                $('#' + targetTab).addClass('active');
+                
+                console.log('Tab switched to:', targetTab);
+            });
+            
+            // Handle hash changes
+            function handleHash() {
+                const hash = window.location.hash.substring(1);
+                if (hash) {
+                    $(`[data-tab="${hash}"]`).trigger('click');
+                }
+            }
+            
+            $(window).on('hashchange', handleHash);
+            handleHash();
+            
+            console.log('Tab system initialized');
+        });
+
+        // Enhanced easter egg function with more celebration
+        function showEasterEgg() {
+            createConfetti();
+            setTimeout(() => {
+                const x = window.innerWidth / 2;
+                const y = window.innerHeight / 2;
+                createFirework(x, y);
+            }, 300);
+            alert("Easter Egg found! 🎉 More celebrations!");
+        }
+    </script>
 </body>
 </html>
